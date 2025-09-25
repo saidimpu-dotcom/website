@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Blast</title>
+  <link rel="stylesheet" href="style.css"> <!-- connects CSS -->
+</head>
+<body>
+  <header>
+    <h1 id="title">Brain Blast</h1>
+    <p1 class="tagline">THINK FAST, THINK SMART 🚀</p1>
+	<p2 class="tagline">(ROUND-1)</p2>
+  </header>
+
+  <!-- Questions (hidden at first) -->
+  <section class="about question" style="display: none;">
+    <h2>1. What is the name of <span class="highlight">red planet</span>?</h2>
+  </section>
+
+  <section class="about question" style="display: none;">
+    <h2>2. What is full of holes but still holds <span class="highlight">the water</span>?</h2>
+  </section>
+
+  <section class="about question" style="display: none;">
+    <h2>3. Evaluate the equation <span class="highlight">2+2*2/6</span>?</h2>
+  </section>
+
+  <section class="about question" style="display: none;">
+    <h2>4. Find the real word <span class="highlight">m t c r e i h s y</span>?</h2>
+  </section>
+
+  <section class="about question" style="display: none;">
+    <h2>5. Guess the movie name through emoji <span class="highlight">💰💸</span>?</h2>
+  </section>
+
+  <!-- Button to show next question -->
+  <div class="btn-container">
+    <button id="nextBtn">Show Next Question ➡</button>
+  </div>
+
+  
+  <script>
+let current = 0;
+const questions = document.querySelectorAll(".question");
+const nextBtn = document.getElementById("nextBtn");
+
+nextBtn.addEventListener("click", () => {
+  if (current < questions.length) {
+    questions[current].style.display = "block"; 
+    current++;
+  } else {
+    nextBtn.disabled = true;
+    nextBtn.innerText = "All Questions Shown ✅";
+  }
+});
+</script>
+
+  
+</body>
+</html>
+
+

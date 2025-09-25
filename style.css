@@ -1,0 +1,55 @@
+
+body {
+  font-family:;
+  background: #C3B091;
+  margin: 0;
+  padding: 30px;
+}
+
+header {
+  background: #4A2C2A;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.about {
+  background: white;
+  margin: 8px;
+  padding:10px;
+  border-radius: 25px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #996515;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: gold;
+}
